@@ -17,7 +17,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
 
         <ImageView
             android:id="@+id/imageView"
@@ -29,8 +30,8 @@
             android:layout_marginEnd="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="10dp"
-            android:tint="@color/icontint"
-            app:srcCompat="@drawable/camera" />
+            app:srcCompat="@drawable/camera"
+            app:tint="@color/icontint" />
 
         <TextView
             android:id="@+id/textView"
@@ -39,7 +40,13 @@
             android:layout_marginTop="5dp"
             android:layout_marginBottom="10dp"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:autoText="false"
+            android:fontFamily="@font/bilbo_swash_caps"
+            android:freezesText="false"
+            android:text="Instagram"
+            android:textColor="@color/textcolor"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -47,8 +54,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="10dp"
-            android:tint="@color/icontint"
-            app:srcCompat="@drawable/tvscreen" />
+            app:srcCompat="@drawable/tvscreen"
+            app:tint="@color/icontint" />
 
         <ImageView
             android:id="@+id/imageView3"
@@ -60,8 +67,8 @@
             android:layout_marginEnd="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="10dp"
-            android:tint="@color/icontint"
-            app:srcCompat="@drawable/send" />
+            app:srcCompat="@drawable/send"
+            app:tint="@color/icontint" />
     </LinearLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
